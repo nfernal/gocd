@@ -1,3 +1,4 @@
+default['set_fqdn'] = 'go-server.jibakurei.com'
 default['java']['install_flavor'] = 'openjdk'
 default['java']['jdk_version'] = '8'
 default['gocd']['repository']['yum']['baseurl'] = 'https://download.gocd.org'

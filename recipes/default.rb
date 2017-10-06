@@ -14,6 +14,8 @@ end
 
 include_recipe 'hostname'
 
+node.override.set_fqdn = 'go-server.jibakurei.com'
+
 ohai 'reload' do
   action :reload
 end

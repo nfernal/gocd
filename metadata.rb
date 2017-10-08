@@ -20,6 +20,5 @@ supports 'redhat'
 # recipe 'gocd::agent_linux', 'Install and configures Linux Go agent'
 # recipe 'gocd::server_linux', 'Install and configures Linux Go server'
 
-depends 'hostname'
+depends 'base'
 depends 'java'
-depends 'yum'

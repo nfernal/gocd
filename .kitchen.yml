@@ -20,7 +20,7 @@ driver:
 platforms:
   - name: CentOS_69
     driver:
-      image_id: ami-1d2dd165
+      image_id: ami-bee92dc6
       instance_type: t2.medium
       associate_public_ip: true
       iam_profile_name: main_infra
@@ -30,7 +30,7 @@ platforms:
           volume_size: 8
           delete_on_termination: true
       tags:
-        Name: maduro-mediawiki-tk
+        Name: maduro-gocd-tk
         Product: maduro.nfernal
         ChargeCode: testbook
 
@@ -44,6 +44,7 @@ transport:
 suites:
   - name: default
     run_list:
+      - recipe[base::default]
       - recipe[gocd::default]
 
 

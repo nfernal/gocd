@@ -4,10 +4,10 @@ maintainer_email 'nfernal13@outlook.com'
 license 'All Rights Reserved'
 description 'Installs/Configures gocd server and agent'
 long_description 'Installs/Configures gocd'
-version '0.1.3'
+version '0.1.4'
 # source_url       'https://github.com/gocd-contrib/go-cookbook' if respond_to?(:source_url)
 # issues_url       'https://github.com/gocd-contrib/go-cookbook/issues' if respond_to?(:issues_url)
-chef_version '>= 12.14' if respond_to?(:chef_version)
+chef_version '>= 12.21' if respond_to?(:chef_version)
 
 supports 'centos'
 supports 'redhat'

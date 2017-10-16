@@ -2,7 +2,7 @@
 provisioner:
   name: chef_zero
   data_bags_path: <%= ENV['DATA_BAGS_PATH'] %>
-  encrypted_data_bag_secret_key_path: <%= ENV['DATA_BAG_SECRET_PATH'] %>
+  encrypted_data_bag_secret_key_path: <%= ENV['DATA_BAG_SECRET_KEY'] %>
   require_chef_omnibus: 12.21.14
 
 driver:

@@ -17,6 +17,14 @@ package 'go-agent' do
   action :install
 end
 
+directory '/var/lib/go-agent' do
+  owner node['gocd']['user']
+  group node['gocd']['group']
+  mode '0755'
+  action :create
+  recursive true
+end
+
 service 'go-agent' do
   supports status: true, restart: true, reload: true
   action [:start, :enable]
